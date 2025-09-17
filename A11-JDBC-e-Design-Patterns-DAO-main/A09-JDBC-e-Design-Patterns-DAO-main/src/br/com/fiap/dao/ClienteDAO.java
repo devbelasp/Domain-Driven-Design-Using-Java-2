@@ -90,30 +90,4 @@ public class ClienteDAO {
             return null;
         }
     }
-
-    public void manipularCliente() {
-        int escolha = Integer.parseInt(JOptionPane.showInputDialog("Escolha uma opção\n(1)Inserir\n(2)alterar\n(3)excluir"));
-        Cliente cliente = new Cliente();
-
-        switch (escolha) {
-            case 1:
-                cliente.setIdCliente(Integer.parseInt(JOptionPane.showInputDialog("ID do cliente")));
-                cliente.setNomeCliente(JOptionPane.showInputDialog("Nome do cliente"));
-                cliente.setPlaca(JOptionPane.showInputDialog("Placa do carro do cliente"));
-                System.out.println(inserir(cliente));
-                break;
-            case 2:
-                cliente.setIdCliente(Integer.parseInt(JOptionPane.showInputDialog("ID do cliente")));
-                cliente.setNomeCliente(JOptionPane.showInputDialog("Nome do cliente"));
-                cliente.setPlaca(JOptionPane.showInputDialog("Placa do carro do cliente"));
-                System.out.println(alterar(cliente));
-                break;
-            case 3:
-                cliente.setIdCliente(Integer.parseInt(JOptionPane.showInputDialog("ID do cliente")));;
-                System.out.println(excluir(cliente));
-                break;
-            default:
-                JOptionPane.showMessageDialog(null, "Escolha incorreta!");
-        }
-    }
 }

@@ -88,32 +88,5 @@ public class CarroDAO {
             return null;
         }
     }
-
-    public void manipularCarro() {
-        Carro carro = new Carro();
-         int escolha = Integer.parseInt(JOptionPane.showInputDialog("Escolha uma opção\n(1)Inserir\n(2)alterar\n(3)excluir"));
-
-        switch (escolha) {
-            case 1:
-                carro.setPlaca(JOptionPane.showInputDialog("Digite a placa do carro"));
-                carro.setCor(JOptionPane.showInputDialog("Digite a cor do carro"));
-                carro.setDescricao(JOptionPane.showInputDialog("Digite a descrição do carro"));
-                System.out.println(inserir(carro));
-                break;
-            case 2:
-                carro.setPlaca(JOptionPane.showInputDialog("Digite a placa do carro"));
-                carro.setCor(JOptionPane.showInputDialog("Digite a cor do carro"));
-                carro.setDescricao(JOptionPane.showInputDialog("Digite a descrição do carro"));
-                System.out.println(alterar(carro));
-                break;
-            case 3:
-                carro.setPlaca(JOptionPane.showInputDialog("Digite a placa do carro"));
-                System.out.println(excluir(carro));
-                break;
-            default:
-                JOptionPane.showMessageDialog(null, "Escolha incorreta!");
-        }
-
-    }
 }
 
